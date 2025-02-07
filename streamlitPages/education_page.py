@@ -113,10 +113,10 @@ def education():
     col1, col2 = st.columns(2)
     with col1:
         view_pdf("./assets/Btech_certificate.pdf", "View Btech certificate", "Unview Btech certificate", "view_bachelors")
-        view_pdf("./assets/Btech_transcript.pdf", "View Btech Transcript", "Unview Btech Transcript", "view_bachelors_transcript")
+        view_pdf("./assets/Btech_Transcript.pdf", "View Btech Transcript", "Unview Btech Transcript", "view_bachelors_transcript")
     with col2:
         download_pdf("./assets/Btech_certificate.pdf", "Download Btech certificate")
-        download_pdf("./assets/Btech_transcript.pdf", "Download Btech Transcript")
+        download_pdf("./assets/Btech_Transcript.pdf", "Download Btech Transcript")
 
     # Intermediate
     st.markdown('<a id="intermediate"></a>', unsafe_allow_html=True)
@@ -153,9 +153,9 @@ def education():
     st.write("  - 🎭 Participated in stage drama and debates")
     col1, col2 = st.columns(2)
     with col1:
-        view_pdf("./assets/school_certificate.pdf", "View High School Certificate", "Unview High School Certificate", "view_school")
+        view_pdf("./assets/School_certificate.pdf", "View High School Certificate", "Unview High School Certificate", "view_school")
     with col2:
-        download_pdf("./assets/school_certificate.pdf", "Download High School Certificate")
+        download_pdf("./assets/School_certificate.pdf", "Download High School Certificate")
 
 if __name__ == "__main__":
     education()

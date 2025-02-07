@@ -18,6 +18,8 @@ def personal_projects():
     st.write("[GitHub Repository](https://github.com/hrudaykolla/segmentation_with_convex_prior)")
 
 
-    st.header("Project 3: Machine Learning Model")
-    st.write("Description: Classification performed on Christams backdrop Images of 8 classes like 'Christmas Cookies', 'Christmas Presents', 'Christmas Tree', 'Fireworks', 'Penguin', 'Raindeer', 'Santa', 'Snowman'")
+    st.header("Project 3: Classification Model")
+    st.write("Description: Classification performed on Christmas backdrop images of 8 classes like 'Christmas Cookies', 'Christmas Presents', 'Christmas Tree', 'Fireworks', 'Penguin', 'Reindeer', 'Santa', 'Snowman'. This project uses a neural network with transfer learning techniques.")
+    st.write("Models: EfficientNet and ConvNeXt are used for feature extraction and classification using transfer learning.")
+    st.write("Skills/Tools: Python, VScode, Deep Learning, Neural Networks, Transfer Learning, EfficientNet, ConvNeXt, TensorFlow, Keras, GitHub.")
     st.write("[GitHub Repository](https://github.com/hrudaykolla/christmas-image-classification)")
