@@ -22,6 +22,8 @@ def professional_experience():
         st.session_state['view_mercedes'] = False
     if 'view_bosch' not in st.session_state:
         st.session_state['view_bosch'] = False
+    if 'view_mercedes' not in st.session_state:
+        st.session_state['view_mercedes'] = False
     if 'view_siegen' not in st.session_state:
         st.session_state['view_siegen'] = False
     if 'view_lt' not in st.session_state:
@@ -80,6 +82,12 @@ def professional_experience():
 
     **Skills/Tools**: Vscode, Microsoft Azure, Networking, Open AI, NLP, Autogen, Docker, GitHub, Chroma DB, LLMs, Streamlit, Numpy, Pandas, Linux, LlamaIndex, Langchain, Langgraph, Hugging Face, WSL, SQL, MS Office
     """)
+
+    col1, col2 = st.columns(2)
+    with col1:
+        view_pdf("./assets/mercedes_reference.pdf", "View Mercedes Reference", "Unview Bosch Reference", "view_mercedes")
+    with col2:
+        download_pdf("./assets/mercedes_reference.pdf", "Download Mercedes Reference")
 
     st.markdown('<a id="bosch"></a>', unsafe_allow_html=True)
     st.markdown('<div style="padding-top: 80px;"></div>', unsafe_allow_html=True)
