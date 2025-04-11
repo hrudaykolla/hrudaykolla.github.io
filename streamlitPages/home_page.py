@@ -1,15 +1,16 @@
 import streamlit as st
 
+
 def home():
     # Set the title of the page
     st.title("Welcome to My Profile")
 
     # Add a photo and about me section side by side
-    col1, col2 = st.columns([1.5, 3])
-    
+    col1, col2 = st.columns([1, 5])
+
     with col1:
         st.image("assets/profile_photo.png", caption="", width=200)
-    
+
     with col2:
         st.header("About Me")
         st.write("""
@@ -20,8 +21,8 @@ def home():
     # What I do section
     st.header("What I Do")
     st.write("""
-    I specialize in AI, machine learning, and large language models (LLMs). I have a strong focus on developing and deploying AI solutions that address real-world problems.
-    Currently, I am learning agentic frameworks like AutoGen, LangGraph, and Crew AI.
+    I specialize in Sofware Development, AI, machine learning, and large language models (LLMs). I have a strong focus on developing and deploying AI solutions that address real-world problems.
+    Currently, I am implementing agentic frameworks like Llamaindex workflows, AutoGen, LangGraph, and Crew AI.
     """)
 
     # Key skills section
@@ -29,18 +30,18 @@ def home():
 
     skills = {
         "Programming Languages & Tools": [
-            "Python", "VSCode", "Jupyter Notebook", "GitHub", "Docker", 
-            "Azure", "SQL", "MS Office", "Linux", "WSL", "SLURM", 
+            "Python", "C++", "VSCode", "Jupyter Notebook", "GitHub", "Docker",
+            "Azure", "SQL", "MS Office", "Linux", "WSL", "SLURM",
             "Neptune", "TensorBoard"
         ],
         "Data Science & Machine Learning": [
-            "Machine Learning", "Deep Learning", "Computer Vision", 
-            "NLP", "LLMs", "Data Processing", "Data Cleaning", 
-            "Feature Engineering", "Time-Series Analysis", "Classification Models", 
+            "Machine Learning", "Deep Learning", "Computer Vision",
+            "NLP", "LLMs", "Data Processing", "Data Cleaning",
+            "Feature Engineering", "Time-Series Analysis", "Classification Models",
             "Clustering", "Pretrained Models", "Open AI"
         ],
         "Libraries & Frameworks": [
-            "Numpy", "Pandas", "Matplotlib", "Seaborn", "Open CV", "Hugging Face", 
+            "Numpy", "Pandas", "Matplotlib", "Seaborn", "Open CV", "Hugging Face",
             "Langchain", "LlamaIndex", "Langgraph", "Chroma DB", "Anomalib"
         ],
     }
@@ -96,6 +97,7 @@ def home():
     }
     </style>
     """, unsafe_allow_html=True)
+
 
 if __name__ == "__main__":
     home()

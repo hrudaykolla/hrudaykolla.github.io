@@ -2,6 +2,7 @@ import streamlit as st
 from streamlit_pdf_viewer import pdf_viewer
 import os
 
+
 def education():
     st.title("🎓 Education")
 
@@ -21,6 +22,8 @@ def education():
         st.markdown("[High School](#school)")
 
     # Initialize session state keys
+    if 'view_masters_degree' not in st.session_state:
+        st.session_state['view_masters_degree'] = False
     if 'view_masters' not in st.session_state:
         st.session_state['view_masters'] = False
     if 'view_esn_Siegen' not in st.session_state:
@@ -30,7 +33,7 @@ def education():
     if 'view_bachelors' not in st.session_state:
         st.session_state['view_bachelors'] = False
     if 'view_bachelors_transcript' not in st.session_state:
-        st.session_state['view_bachelors_transcript'] = False 
+        st.session_state['view_bachelors_transcript'] = False
     if 'view_intermediate' not in st.session_state:
         st.session_state['view_intermediate'] = False
     if 'view_school' not in st.session_state:
@@ -70,14 +73,17 @@ def education():
         if os.path.exists(file_path):
             with open(file_path, "rb") as pdf_file:
                 PDFbyte = pdf_file.read()
-                st.download_button(label=f"⬇️ {download_label}", data=PDFbyte, file_name=os.path.basename(file_path), mime='application/pdf')
+                st.download_button(label=f"⬇️ {download_label}", data=PDFbyte, file_name=os.path.basename(
+                    file_path), mime='application/pdf')
         else:
             st.error(f"File not found: {file_path}")
 
     # Masters
     st.markdown('<a id="masters"></a>', unsafe_allow_html=True)
-    st.markdown('<div style="padding-top: 80px;"></div>', unsafe_allow_html=True)
-    st.header("[Masters of Science in Mechatronics](https://www.mechatronics.eti.uni-siegen.de/)")
+    st.markdown('<div style="padding-top: 80px;"></div>',
+                unsafe_allow_html=True)
+    st.header(
+        "[Masters of Science in Mechatronics](https://www.mechatronics.eti.uni-siegen.de/)")
     st.write("[🏫 University of Siegen](https://www.uni-siegen.de/start/)")
     col1, col2, col3 = st.columns(3)
     col1.write("📅 Start Date: 2021-October")
@@ -89,19 +95,30 @@ def education():
     st.write("  - 🤝 Volunteered with ESN Siegen and Examination Board")
     col1, col2 = st.columns(2)
     with col1:
-        view_pdf("./assets/masters_list_of_Achievements.pdf", "View Master List of Achievements", "Unview Master List of Achievements", "view_masters")
-        view_pdf("./assets/ESN_Siegen.pdf", "View ESN Siegen Certificate", "Unview ESN Siegen Certificate", "view_esn_Siegen")
-        view_pdf("./assets/Examination_Board_acknowledgement.pdf", "View Examination Board Certificate", "Unview Examination Board Certificate", "view_examboard")
+        view_pdf("./assets/masters_degree.pdf", "View Masters Degree",
+                 "Unview Masters Degree", "view_masters_degree")
+        view_pdf("./assets/masters_list_of_Achievements.pdf", "View Master List of Achievements",
+                 "Unview Master List of Achievements", "view_masters")
+        view_pdf("./assets/ESN_Siegen.pdf", "View ESN Siegen Certificate",
+                 "Unview ESN Siegen Certificate", "view_esn_Siegen")
+        view_pdf("./assets/Examination_Board_acknowledgement.pdf", "View Examination Board Certificate",
+                 "Unview Examination Board Certificate", "view_examboard")
     with col2:
-        download_pdf("./assets/masters_list_of_Achievements.pdf", "Download Master List of Achievements")
-        download_pdf("./assets/ESN_Siegen.pdf", "Download ESN Siegen Certificate")
-        download_pdf("./assets/Examination_Board_acknowledgement.pdf", "Download Examination Board Certificate")
-        
+        download_pdf("./assets/masters_degree.pdf",
+                     "Download Masters Degree")
+        download_pdf("./assets/masters_list_of_Achievements.pdf",
+                     "Download Master List of Achievements")
+        download_pdf("./assets/ESN_Siegen.pdf",
+                     "Download ESN Siegen Certificate")
+        download_pdf("./assets/Examination_Board_acknowledgement.pdf",
+                     "Download Examination Board Certificate")
 
     # Bachelors
     st.markdown('<a id="bachelors"></a>', unsafe_allow_html=True)
-    st.markdown('<div style="padding-top: 80px;"></div>', unsafe_allow_html=True)
-    st.header("[Bachelors of Technology in Mechanical Engineering](https://nitc.ac.in/department/mechanical-engineering)")
+    st.markdown('<div style="padding-top: 80px;"></div>',
+                unsafe_allow_html=True)
+    st.header(
+        "[Bachelors of Technology in Mechanical Engineering](https://nitc.ac.in/department/mechanical-engineering)")
     st.write("[🏫 National Institute of Technology Calicut](https://nitc.ac.in/)")
     col1, col2, col3 = st.columns(3)
     col1.write("📅 Start Date: 2014-August")
@@ -112,15 +129,20 @@ def education():
     st.write("  - 🤝 Attended Inter-NIT Volleyball Competitions")
     col1, col2 = st.columns(2)
     with col1:
-        view_pdf("./assets/Btech_certificate.pdf", "View Btech certificate", "Unview Btech certificate", "view_bachelors")
-        view_pdf("./assets/Btech_Transcript.pdf", "View Btech Transcript", "Unview Btech Transcript", "view_bachelors_transcript")
+        view_pdf("./assets/Btech_certificate.pdf", "View Btech certificate",
+                 "Unview Btech certificate", "view_bachelors")
+        view_pdf("./assets/Btech_Transcript.pdf", "View Btech Transcript",
+                 "Unview Btech Transcript", "view_bachelors_transcript")
     with col2:
-        download_pdf("./assets/Btech_certificate.pdf", "Download Btech certificate")
-        download_pdf("./assets/Btech_Transcript.pdf", "Download Btech Transcript")
+        download_pdf("./assets/Btech_certificate.pdf",
+                     "Download Btech certificate")
+        download_pdf("./assets/Btech_Transcript.pdf",
+                     "Download Btech Transcript")
 
     # Intermediate
     st.markdown('<a id="intermediate"></a>', unsafe_allow_html=True)
-    st.markdown('<div style="padding-top: 80px;"></div>', unsafe_allow_html=True)
+    st.markdown('<div style="padding-top: 80px;"></div>',
+                unsafe_allow_html=True)
     st.header("Intermediate")
     st.write("🏫 Narayana Junior Colege")
     col1, col2, col3 = st.columns(3)
@@ -133,13 +155,16 @@ def education():
     st.write("  - 📚 Subjects: Focus on Maths, Physics, Chemistry")
     col1, col2 = st.columns(2)
     with col1:
-        view_pdf("./assets/Intermediate_certificate.pdf", "View Intermediate Certificate", "Unview Intermediate Certificate", "view_intermediate")
+        view_pdf("./assets/Intermediate_certificate.pdf", "View Intermediate Certificate",
+                 "Unview Intermediate Certificate", "view_intermediate")
     with col2:
-        download_pdf("./assets/Intermediate_certificate.pdf", "Download Intermediate Certificate")
+        download_pdf("./assets/Intermediate_certificate.pdf",
+                     "Download Intermediate Certificate")
 
     # School
     st.markdown('<a id="school"></a>', unsafe_allow_html=True)
-    st.markdown('<div style="padding-top: 80px;"></div>', unsafe_allow_html=True)
+    st.markdown('<div style="padding-top: 80px;"></div>',
+                unsafe_allow_html=True)
     st.header("High School Diploma")
     st.write("🏫 SFS High School")
     col1, col2, col3 = st.columns(3)
@@ -153,9 +178,12 @@ def education():
     st.write("  - 🎭 Participated in stage drama and debates")
     col1, col2 = st.columns(2)
     with col1:
-        view_pdf("./assets/School_certificate.pdf", "View High School Certificate", "Unview High School Certificate", "view_school")
+        view_pdf("./assets/School_certificate.pdf", "View High School Certificate",
+                 "Unview High School Certificate", "view_school")
     with col2:
-        download_pdf("./assets/School_certificate.pdf", "Download High School Certificate")
+        download_pdf("./assets/School_certificate.pdf",
+                     "Download High School Certificate")
+
 
 if __name__ == "__main__":
     education()
