@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hruday Kumar – Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== SIDEBAR ===== -->
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <img src="assets/profile_photo.png" alt="Hruday Kumar" class="sidebar-avatar" />
+      <h2 class="sidebar-name">Hruday Kumar</h2>
+      <p class="sidebar-tagline">AI &amp; Data Engineer</p>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#profile"   class="nav-link active" data-page="profile">👤 Profile</a></li>
+      <li><a href="#experience" class="nav-link" data-page="experience">💼 Experience</a></li>
+      <li><a href="#education" class="nav-link" data-page="education">🎓 Education</a></li>
+      <li><a href="#projects"  class="nav-link" data-page="projects">💻 Projects</a></li>
+      <li><a href="#certifications" class="nav-link" data-page="certifications">🏅 Certifications</a></li>
+    </ul>
+    <button id="sidebar-toggle" aria-label="Toggle sidebar">&#9776;</button>
+  </nav>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main id="main-content">
+
+    <!-- ========== PROFILE PAGE ========== -->
+    <section id="profile" class="page active">
+
+      <div class="hero-row">
+        <img src="assets/profile_photo.png" alt="Hruday Kumar" class="hero-photo" />
+        <div class="hero-text">
+          <p class="hero-eyebrow">AI &amp; Data Engineer &middot; Frankfurt, Germany</p>
+          <h1 class="hero-name">Hruday Kumar Kolla</h1>
+          <p class="hero-bio">
+            5+ years designing and deploying <strong>production-grade AI systems</strong> — from RAG pipelines
+            and agentic workflows to cloud-native applications and computer vision. Strong focus on scalability,
+            data privacy, and end-to-end system architecture. Open to roles in AI consulting,
+            real-time data, and technical project leadership.
+          </p>
+          <div class="contact-inline">
+            <a href="mailto:hrudaykumar16@gmail.com" class="badge">📧 hrudaykumar16@gmail.com</a>
+            <a href="https://www.linkedin.com/in/hrudaykolla/" target="_blank" class="badge">💼 LinkedIn</a>
+            <a href="https://github.com/hrudaykolla/" target="_blank" class="badge">💻 GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stat strip -->
+      <div class="stat-strip">
+        <div class="stat-item">
+          <span class="stat-num">5+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Countries</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Companies</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+      </div>
+
+      <!-- What I Do -->
+      <div class="card">
+        <h2>What I Do</h2>
+        <div class="capability-grid">
+          <div class="cap-card">
+            <span class="cap-icon">🤖</span>
+            <h3>AI Application Development</h3>
+            <p>Production LLM apps, RAG pipelines, agentic workflows with LangGraph, AutoGen &amp; MCP, and developer tooling deployed on Azure.</p>
+          </div>
+          <div class="cap-card">
+            <span class="cap-icon">☁️</span>
+            <h3>Cloud &amp; MLOps</h3>
+            <p>End-to-end Azure architecture, Docker, CI/CD pipelines, containerized deployments, and scalable cloud-native AI infrastructure.</p>
+          </div>
+          <div class="cap-card">
+            <span class="cap-icon">🧠</span>
+            <h3>ML &amp; Computer Vision</h3>
+            <p>Unsupervised defect detection, foundation models (DinoV2), activity recognition, deep learning research, and model optimization.</p>
+          </div>
+          <div class="cap-card">
+            <span class="cap-icon">📊</span>
+            <h3>Data Engineering &amp; Analysis</h3>
+            <p>Time-series analysis, feature engineering, vector databases, data pipelines, and signal processing for industrial applications.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Skills -->
+      <div class="card">
+        <h2>My Key Skills</h2>
+
+        <h3>LLM &amp; Generative AI</h3>
+        <div class="tag-cloud">
+          <span class="tag">OpenAI</span><span class="tag">Gemini</span><span class="tag">Claude</span>
+          <span class="tag">Ollama</span><span class="tag">RAG</span><span class="tag">LangChain</span>
+          <span class="tag">LangGraph</span><span class="tag">LlamaIndex</span><span class="tag">Autogen</span>
+          <span class="tag">MCP (fastmcp)</span><span class="tag">Hugging Face</span><span class="tag">Model Scope</span>
+          <span class="tag">Nvidia Nemo</span><span class="tag">Unsloth</span><span class="tag">ChromaDB</span>
+          <span class="tag">Litellm</span><span class="tag">Open Web UI</span><span class="tag">Open Web Pipelines</span>
+        </div>
+
+        <h3>Programming Languages</h3>
+        <div class="tag-cloud">
+          <span class="tag">Python</span><span class="tag">C++</span><span class="tag">Bash</span>
+          <span class="tag">SQL</span><span class="tag">MATLAB</span><span class="tag">OOP</span>
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">C#</span>
+        </div>
+
+        <h3>ML &amp; DL Techniques</h3>
+        <div class="tag-cloud">
+          <span class="tag">Diffusion Models</span><span class="tag">Transformers</span><span class="tag">CNN</span>
+          <span class="tag">DNN</span><span class="tag">Auto Encoders</span><span class="tag">LSTM</span>
+          <span class="tag">GRU</span><span class="tag">Foundation Models</span><span class="tag">Random Forest</span>
+          <span class="tag">SVM</span><span class="tag">Linear Regression</span><span class="tag">Object Detection</span>
+          <span class="tag">Segmentation</span><span class="tag">Clustering</span><span class="tag">Transfer Learning</span>
+          <span class="tag">Hyperparameter Optimisation</span>
+        </div>
+
+        <h3>Libraries &amp; Frameworks</h3>
+        <div class="tag-cloud">
+          <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">Keras</span>
+          <span class="tag">Scikit-learn</span><span class="tag">Pandas</span><span class="tag">NumPy</span>
+          <span class="tag">OpenCV</span><span class="tag">SciPy</span><span class="tag">NLTK</span>
+          <span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">Plotly</span>
+          <span class="tag">Anomalib</span><span class="tag">NetworkX</span><span class="tag">FastAPI</span>
+          <span class="tag">Flask</span><span class="tag">React</span><span class="tag">Streamlit</span>
+          <span class="tag">SQLAlchemy</span><span class="tag">Celery</span>
+        </div>
+
+        <h3>Cloud &amp; Infrastructure</h3>
+        <div class="tag-cloud">
+          <span class="tag">Microsoft Azure</span><span class="tag">Azure Application Gateway</span>
+          <span class="tag">Azure Web Apps</span><span class="tag">Azure Container Apps</span>
+          <span class="tag">Azure Container Registry</span><span class="tag">Azure DNS</span>
+          <span class="tag">Azure OpenAI</span><span class="tag">Azure Foundry</span>
+          <span class="tag">Hybrid Networking</span><span class="tag">Certificates</span>
+          <span class="tag">AWS Lambda</span><span class="tag">AWS Bedrock</span>
+          <span class="tag">AWS SageMaker</span><span class="tag">Power Automate</span>
+        </div>
+
+        <h3>DevOps, Messaging &amp; Monitoring</h3>
+        <div class="tag-cloud">
+          <span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">Azure DevOps</span>
+          <span class="tag">CI/CD</span><span class="tag">REST APIs</span><span class="tag">MLOps</span>
+          <span class="tag">MLflow</span><span class="tag">Kubernetes (Learning)</span>
+          <span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">GitLab</span>
+        </div>
+
+        <h3>Data &amp; Storage</h3>
+        <div class="tag-cloud">
+          <span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">Chroma DB</span>
+          <span class="tag">FAISS</span><span class="tag">Redis</span><span class="tag">MinIO</span>
+          <span class="tag">Data Catalogues</span><span class="tag">Airflow</span>
+        </div>
+
+        <h3>Tools &amp; Platforms</h3>
+        <div class="tag-cloud">
+          <span class="tag">VS Code</span><span class="tag">Jupyter Notebook</span><span class="tag">GitHub</span>
+          <span class="tag">GitLab</span><span class="tag">JIRA</span><span class="tag">Confluence</span>
+          <span class="tag">Linux</span><span class="tag">WSL</span><span class="tag">SLURM</span>
+          <span class="tag">Neptune</span><span class="tag">TensorBoard</span><span class="tag">Tableau</span>
+          <span class="tag">PopSQL</span><span class="tag">ServiceNow</span><span class="tag">Google Colab</span>
+        </div>
+
+        <h3>Management &amp; Soft Skills</h3>
+        <div class="tag-cloud">
+          <span class="tag">Communication</span><span class="tag">Decision-making</span>
+          <span class="tag">Problem-solving</span><span class="tag">Time Management</span>
+          <span class="tag">Adaptability</span><span class="tag">Workshops</span>
+          <span class="tag">Technical Documentation</span>
+        </div>
+      </div>
+
+      <!-- Interests & Languages -->
+      <div class="two-col-cards">
+        <div class="card">
+          <h2>My Interests</h2>
+          <ul class="icon-list">
+            <li>🏐 Volleyball</li>
+            <li>🏸 Badminton</li>
+            <li>🏋️ Workout</li>
+            <li>💹 Investment</li>
+            <li>💻 Technology Enthusiast</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>I Speak</h2>
+          <ul class="icon-list">
+            <li><strong>English</strong> – Fluent</li>
+            <li><strong>German</strong> – Basic Conversational, Learning</li>
+            <li><strong>Telugu</strong> – Native</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="card">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out via email or connect with me on LinkedIn and GitHub.</p>
+        <ul class="icon-list">
+          <li>📧 Email: <a href="mailto:hrudaykumar16@gmail.com">hrudaykumar16@gmail.com</a></li>
+          <li>📱 Mobile: +4915758285757</li>
+          <li>💼 LinkedIn: <a href="https://www.linkedin.com/in/hrudaykolla/" target="_blank">linkedin.com/in/hrudaykolla</a></li>
+          <li>💻 GitHub: <a href="https://github.com/hrudaykolla/" target="_blank">github.com/hrudaykolla</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIENCE PAGE ========== -->
+    <section id="experience" class="page">
+      <h1 class="page-title">Professional Experience 💼</h1>
+
+      <!-- Quick nav -->
+      <div class="quick-nav">
+        <a href="#dipf" class="qnav-link">DIPF</a>
+        <a href="#mercedes" class="qnav-link">Mercedes Benz AG</a>
+        <a href="#bosch" class="qnav-link">Robert Bosch GmbH</a>
+        <a href="#siegen" class="qnav-link">University of Siegen</a>
+        <a href="#lt" class="qnav-link">Larsen &amp; Toubro</a>
+      </div>
+
+      <!-- DIPF -->
+      <div class="card timeline-card" id="dipf">
+        <div class="tl-header">
+          <div>
+            <h2>AI Developer</h2>
+            <h3>DIPF | Leibniz Institute for Research and Information in Education</h3>
+          </div>
+          <div class="tl-meta">
+            <span class="badge-outline">📅 Sep 2025 – Present</span>
+            <span class="badge-outline">📍 Frankfurt, Germany</span>
+          </div>
+        </div>
+        <div class="tag-cloud">
+          <span class="tag">AI</span><span class="tag">Python</span><span class="tag">Research</span>
+          <span class="tag">Education Technology</span>
+        </div>
+      </div>
+
+      <!-- Mercedes -->
+      <div class="card timeline-card" id="mercedes">
+        <div class="tl-header">
+          <div>
+            <h2>AI Developer – Drive Software Development Team</h2>
+            <h3>Mercedes Benz AG</h3>
+          </div>
+          <div class="tl-meta">
+            <span class="badge-outline">📅 May 2024 – Aug 2025</span>
+            <span class="badge-outline">📍 Sindelfingen, Germany</span>
+          </div>
+        </div>
+
+        <h4>AI Application Development</h4>
+        <p>
+          Designed, developed and deployed AI-powered web applications on Microsoft Azure using Python, FastAPI, and
+          Docker, enabling secure on-prem to cloud integrations as a full-time intern and working student.
+        </p>
+        <ul>
+          <li>Delivered PoCs, technical presentations, and workshops, gathering user feedback and providing architectural recommendations.</li>
+          <li>Built an AI-powered RAG chatbot integrated with JIRA and Confluence to answer developer queries.</li>
+          <li>Engineered a <strong>Software Requirements Analysis Platform</strong> to validate requirements against industry standards (INCOSE, VDA) that detect text errors, and identify contradictions with other requirements. Enhanced with Autogen Agentic workflows for consistent responses. Implemented Model Context Protocol (MCP) via fastmcp for this application.</li>
+        </ul>
+
+        <h4>Cloud &amp; Platform Engineering</h4>
+        <p>
+          Took ownership of end-to-end Microsoft Azure cloud architecture setup for AI applications, configuring
+          Azure Application Gateway, Web Apps, Container Apps, Container Registry, DNS, Certificates, and Networking.
+        </p>
+        <ul>
+          <li>Configured and managed Azure OpenAI Service and Azure Foundry to support AI solutions in the team.</li>
+          <li>Deployed containerized applications using Docker, authored optimized Dockerfiles, and integrated with Azure DevOps pipelines for CI/CD.</li>
+          <li>Documented technical setups, deployment workflows, and AI integration processes to establish a reusable knowledge base for future projects.</li>
+        </ul>
+
+        <div class="tag-cloud">
+          <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Docker</span>
+          <span class="tag">Microsoft Azure</span><span class="tag">Azure DevOps</span><span class="tag">Azure OpenAI</span>
+          <span class="tag">RAG</span><span class="tag">LangGraph</span><span class="tag">Autogen</span>
+          <span class="tag">MCP (fastmcp)</span><span class="tag">CI/CD</span><span class="tag">OpenAI</span>
+          <span class="tag">Chroma DB</span><span class="tag">JIRA</span><span class="tag">Confluence</span>
+        </div>
+        <div class="pdf-row">
+          <button class="btn-pdf" onclick="togglePDF('pdf-mercedes', 'assets/mercedes_reference.pdf')">👁️ View Reference</button>
+          <a href="assets/mercedes_reference.pdf" download class="btn-download">⬇️ Download Reference</a>
+        </div>
+      </div>
+
+      <!-- Bosch -->
+      <div class="card timeline-card" id="bosch">
+        <div class="tl-header">
+          <div>
+            <h2>Computer Vision Engineer – Master Thesis</h2>
+            <h3>Robert Bosch GmbH</h3>
+          </div>
+          <div class="tl-meta">
+            <span class="badge-outline">📅 Mar 2024 – Sep 2024</span>
+            <span class="badge-outline">📍 Reutlingen, Germany</span>
+          </div>
+        </div>
+        <p>
+          Developed and implemented a novel AI-based unsupervised defect recognition algorithm for analysing image data
+          in automotive manufacturing processes.
+        </p>
+        <ul>
+          <li>Designed an iterative hierarchical clustering approach using foundational models such as DinoV2 for
+            advanced feature extraction.</li>
+          <li>Integrated multiple neural network architectures for feature extraction, followed by dimensionality
+            reduction and custom clustering adaptation.</li>
+          <li>Achieved a <strong>5% improvement in recognition accuracy</strong> compared to existing clustering
+            methods through benchmarking on four industrial datasets.</li>
+          <li>Delivered results ahead of schedule while maintaining quality and efficiency.</li>
+        </ul>
+        <div class="tag-cloud">
+          <span class="tag">Python</span><span class="tag">Anomalib</span><span class="tag">Computer Vision</span>
+          <span class="tag">Pretrained Models</span><span class="tag">Clustering</span>
+          <span class="tag">OpenCV</span><span class="tag">NumPy</span><span class="tag">Pandas</span>
+          <span class="tag">Linux</span>
+        </div>
+        <div class="pdf-row">
+          <button class="btn-pdf" onclick="togglePDF('pdf-bosch', 'assets/bosch_reference.pdf')">👁️ View Reference</button>
+          <a href="assets/bosch_reference.pdf" download class="btn-download">⬇️ Download Reference</a>
+        </div>
+      </div>
+
+      <!-- Siegen -->
+      <div class="card timeline-card" id="siegen">
+        <div class="tl-header">
+          <div>
+            <h2>Deep Learning Research Assistant</h2>
+            <h3>University of Siegen</h3>
+          </div>
+          <div class="tl-meta">
+            <span class="badge-outline">📅 Jul 2023 – Feb 2024</span>
+            <span class="badge-outline">📍 Siegen, Germany</span>
+          </div>
+        </div>
+        <ul>
+          <li>Developed a Deep Convolutional LSTM network architecture improving temporal context without increasing
+            network parameters, with <strong>6% enhancements in accuracy, F1 score, and average MAP</strong> across
+            Human Activity Recognition (HAR) datasets.</li>
+          <li>Optimised existing activity detection methods by extracting LSTM features and training them on vision
+            networks, resulting in a <strong>5% improvement in F1 and average MAP scores</strong>.</li>
+          <li>Designed a novel outlier removal and dataset normalisation method to improve dataset quality.</li>
+          <li>Developed a theoretical Compensation Matrix with the method of least squares for 3D Imaging to remove
+            harmonic distortions in time-of-flight signals.</li>
+        </ul>
+        <div class="tag-cloud">
+          <span class="tag">Python</span><span class="tag">SLURM</span><span class="tag">Linux</span>
+          <span class="tag">Neptune</span><span class="tag">TensorBoard</span><span class="tag">Deep Learning</span>
+          <span class="tag">Computer Vision</span>
+        </div>
+        <div class="pdf-row">
+          <button class="btn-pdf" onclick="togglePDF('pdf-siegen', 'assets/university_siegen_reference.pdf')">👁️ View Reference</button>
+          <a href="assets/university_siegen_reference.pdf" download class="btn-download">⬇️ Download Reference</a>
+        </div>
+      </div>
+
+      <!-- L&T -->
+      <div class="card timeline-card" id="lt">
+        <div class="tl-header">
+          <div>
+            <h2>Jr. Data Scientist</h2>
+            <h3>Larsen and Toubro (L&amp;T) Ltd</h3>
+          </div>
+          <div class="tl-meta">
+            <span class="badge-outline">📅 Jul 2018 – Jun 2021</span>
+            <span class="badge-outline">📍 India</span>
+          </div>
+        </div>
+        <p>
+          <strong>Predictive Maintenance for Industrial Equipment:</strong> Collaborated with the Construction
+          Equipment division to develop a predictive maintenance system. By analysing real-time sensor data, forecast
+          equipment failures enabling proactive maintenance scheduling. This approach <strong>reduced unplanned
+          downtime by 30%</strong> and <strong>maintenance costs by 20%</strong>.
+        </p>
+        <div class="tag-cloud">
+          <span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">Sensors</span>
+          <span class="tag">SQL</span><span class="tag">Time-Series Analysis</span>
+          <span class="tag">Feature Engineering</span><span class="tag">GridSearchCV</span>
+          <span class="tag">NumPy</span><span class="tag">Pandas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EDUCATION PAGE ========== -->
+    <section id="education" class="page">
+      <h1 class="page-title">🎓 Education</h1>
+
+      <!-- Quick nav -->
+      <div class="quick-nav">
+        <a href="#masters" class="qnav-link">Masters</a>
+        <a href="#bachelors" class="qnav-link">Bachelors</a>
+        <a href="#intermediate" class="qnav-link">Intermediate</a>
+        <a href="#school" class="qnav-link">High School</a>
+      </div>
+
+      <!-- Masters -->
+      <div class="card timeline-card" id="masters">
+        <div class="tl-header">
+          <div>
+            <h2><a href="https://www.mechatronics.eti.uni-siegen.de/" target="_blank">Masters of Science in Mechatronics</a></h2>
+            <h3><a href="https://www.uni-siegen.de/start/" target="_blank">🏫 University of Siegen</a></h3>
+          </div>
+          <div class="tl-meta">
+            <span class="badge-outline">📅 Oct 2021 – Sep 2024</span>
+            <span class="badge-outline">📍 Siegen, Germany</span>
+          </div>
+        </div>
+        <p><strong>🏅 Grade: 1.4 / 4</strong> (1 being best)</p>
+        <p><strong>📚 Focus:</strong> Deep Learning, Computer Vision, Machine Learning, Unsupervised Deep Learning, C++,
+          Embedded Systems, Industrial Communication, Control Systems</p>
+        <p><strong>🤝 Volunteered</strong> with ESN Siegen and Examination Board</p>
+        <div class="pdf-grid">
+          <div>
+            <button class="btn-pdf" onclick="togglePDF('pdf-masters-deg', 'assets/masters_degree.pdf')">👁️ View Masters Degree</button>
+            <a href="assets/masters_degree.pdf" download class="btn-download">⬇️ Download</a>
+          </div>
+          <div>
+            <button class="btn-pdf" onclick="togglePDF('pdf-masters-ach', 'assets/masters_list_of_Achievements.pdf')">👁️ View List of Achievements</button>
+            <a href="assets/masters_list_of_Achievements.pdf" download class="btn-download">⬇️ Download</a>
+          </div>
+          <div>
+            <button class="btn-pdf" onclick="togglePDF('pdf-esn', 'assets/ESN_Siegen.pdf')">👁️ View ESN Siegen Certificate</button>
+            <a href="assets/ESN_Siegen.pdf" download class="btn-download">⬇️ Download</a>
+          </div>
+          <div>
+            <button class="btn-pdf" onclick="togglePDF('pdf-examboard', 'assets/Examination_Board_acknowledgement.pdf')">👁️ View Examination Board Certificate</button>
+            <a href="assets/Examination_Board_acknowledgement.pdf" download class="btn-download">⬇️ Download</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bachelors -->
+      <div class="card timeline-card" id="bachelors">
+        <div class="tl-header">
+          <div>
+            <h2><a href="https://nitc.ac.in/department/mechanical-engineering" target="_blank">Bachelors of Technology in Mechanical Engineering</a></h2>
+            <h3><a href="https://nitc.ac.in/" target="_blank">🏫 National Institute of Technology Calicut</a></h3>
+          </div>
+          <div class="tl-meta">
+            <span class="badge-outline">📅 Aug 2014 – May 2018</span>
+            <span class="badge-outline">📍 Calicut, India</span>
+          </div>
+        </div>
+        <p><strong>🏅 CGPA: 7.77 / 10</strong></p>
+        <p>🤝 Attended Inter-NIT Volleyball Competitions</p>
+        <div class="pdf-grid">
+          <div>
+            <button class="btn-pdf" onclick="togglePDF('pdf-btech', 'assets/Btech_certificate.pdf')">👁️ View B.Tech Certificate</button>
+            <a href="assets/Btech_certificate.pdf" download class="btn-download">⬇️ Download</a>
+          </div>
+          <div>
+            <button class="btn-pdf" onclick="togglePDF('pdf-btech-trans', 'assets/Btech_Transcript.pdf')">👁️ View B.Tech Transcript</button>
+            <a href="assets/Btech_Transcript.pdf" download class="btn-download">⬇️ Download</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Intermediate -->
+      <div class="card timeline-card" id="intermediate">
+        <div class="tl-header">
+          <div>
+            <h2>Intermediate</h2>
+            <h3>🏫 Narayana Junior College</h3>
+          </div>
+          <div class="tl-meta">
+            <span class="badge-outline">📅 Jul 2012 – Apr 2014</span>
+            <span class="badge-outline">📍 Vijayawada, India</span>
+          </div>
+        </div>
+        <p><strong>🏅 Marks: 970 / 1000</strong></p>
+        <p>🏅 Achieved an All India Rank of <strong>4553</strong> out of 1.3 million students for JEE Mains 2014.</p>
+        <p>📚 Focus: Maths, Physics, Chemistry</p>
+        <div class="pdf-grid">
+          <div>
+            <button class="btn-pdf" onclick="togglePDF('pdf-inter', 'assets/Intermediate_certificate.pdf')">👁️ View Certificate</button>
+            <a href="assets/Intermediate_certificate.pdf" download class="btn-download">⬇️ Download</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- High School -->
+      <div class="card timeline-card" id="school">
+        <div class="tl-header">
+          <div>
+            <h2>High School Diploma</h2>
+            <h3>🏫 SFS High School</h3>
+          </div>
+          <div class="tl-meta">
+            <span class="badge-outline">📅 Jun 2011 – Apr 2012</span>
+            <span class="badge-outline">📍 Nagulaplem, India</span>
+          </div>
+        </div>
+        <p><strong>🏅 Grade: 9.8 / 10</strong></p>
+        <ul>
+          <li>🏆 Sports Captain</li>
+          <li>🏃 Active in sports (kabaddi, volleyball)</li>
+          <li>🎭 Participated in stage drama and debates</li>
+        </ul>
+        <div class="pdf-grid">
+          <div>
+            <button class="btn-pdf" onclick="togglePDF('pdf-school', 'assets/School_certificate.pdf')">👁️ View Certificate</button>
+            <a href="assets/School_certificate.pdf" download class="btn-download">⬇️ Download</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS PAGE ========== -->
+    <section id="projects" class="page">
+      <h1 class="page-title">Personal Projects 💻</h1>
+
+      <div class="card">
+        <h2>Project 1: NLP Projects</h2>
+        <p>
+          This repository includes several NLP projects: a fake news classifier, a spam messages classifier,
+          a stock price prediction model using LSTM, and a stock sentiment analysis.
+        </p>
+        <div class="tag-cloud">
+          <span class="tag">Python</span><span class="tag">NLP</span><span class="tag">Machine Learning</span>
+          <span class="tag">Random Forest</span><span class="tag">Pandas</span><span class="tag">NLTK</span>
+          <span class="tag">Scikit-Learn</span>
+        </div>
+        <a href="https://github.com/hrudaykolla/nlp_projects" target="_blank" class="btn-github">🔗 GitHub Repository</a>
+      </div>
+
+      <div class="card">
+        <h2>Project 2: Segmentation with Convexity Prior</h2>
+        <p>
+          Simple architecture for segmenting convex objects in images using user-provided scribbles. The proposed
+          approach involves a primary model to segment pixels into foreground and background regions. The primary
+          model's output is subsequently passed to a Convex network, which refines the foreground pixels to adhere
+          to the convexity prior, assuming smooth and continuous boundaries without concave regions.
+        </p>
+        <p>The architecture achieves memory efficiency and does not require training on a vast number of images,
+          making it suitable for practical applications with limited computational resources.</p>
+        <div class="tag-cloud">
+          <span class="tag">Python</span><span class="tag">Deep Learning</span><span class="tag">Neural Networks</span>
+          <span class="tag">Segmentation</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span>
+          <span class="tag">Architecture Design</span>
+        </div>
+        <a href="https://github.com/hrudaykolla/segmentation_with_convex_prior" target="_blank" class="btn-github">🔗 GitHub Repository</a>
+      </div>
+
+      <div class="card">
+        <h2>Project 3: Christmas Image Classification</h2>
+        <p>
+          Classification performed on Christmas backdrop images of 8 classes: Christmas Cookies, Christmas
+          Presents, Christmas Tree, Fireworks, Penguin, Reindeer, Santa, Snowman. This project uses a neural
+          network with transfer learning techniques.
+        </p>
+        <p><strong>Models:</strong> EfficientNet and ConvNeXt for feature extraction and classification using transfer learning.</p>
+        <div class="tag-cloud">
+          <span class="tag">Python</span><span class="tag">Deep Learning</span><span class="tag">Transfer Learning</span>
+          <span class="tag">EfficientNet</span><span class="tag">ConvNeXt</span>
+          <span class="tag">TensorFlow</span><span class="tag">Keras</span>
+        </div>
+        <a href="https://github.com/hrudaykolla/christmas-image-classification" target="_blank" class="btn-github">🔗 GitHub Repository</a>
+      </div>
+    </section>
+
+    <!-- ========== CERTIFICATIONS PAGE ========== -->
+    <section id="certifications" class="page">
+      <h1 class="page-title">🏅 Certifications</h1>
+
+      <div class="cert-grid">
+
+        <!-- Microsoft Azure AI Fundamentals -->
+        <div class="card cert-card">
+          <div class="cert-badge cert-badge--microsoft">
+            <span class="cert-issuer-icon">🪟</span>
+          </div>
+          <div class="cert-body">
+            <h2>Microsoft Certified: Azure AI Fundamentals</h2>
+            <p class="cert-issuer">Microsoft</p>
+            <p class="cert-date">📅 Issued: September 27, 2023</p>
+            <p class="cert-id">🔑 Credential ID: 88F9C4DBFC35064F</p>
+            <div class="tag-cloud">
+              <span class="tag">Azure AI</span><span class="tag">Machine Learning</span>
+              <span class="tag">Computer Vision</span><span class="tag">Azure</span>
+            </div>
+            <div class="pdf-row">
+              <button class="btn-pdf" onclick="togglePDF('pdf-cert-azure', 'assets/AzureAI_cert.pdf')">👁️ View Certificate</button>
+              <a href="assets/AzureAI_cert.pdf" download class="btn-download">⬇️ Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Generative AI for Everyone -->
+        <div class="card cert-card">
+          <div class="cert-badge cert-badge--deeplearning">
+            <span class="cert-issuer-icon">🧠</span>
+          </div>
+          <div class="cert-body">
+            <h2>Generative AI for Everyone</h2>
+            <p class="cert-issuer">DeepLearning.AI &amp; Coursera</p>
+            <p class="cert-date">📅 Issued: January 4, 2024</p>
+            <p class="cert-id">🔗 <a href="https://coursera.org/verify/S7WX6V2UJXLA" target="_blank">Verify: S7WX6V2UJXLA</a></p>
+            <div class="tag-cloud">
+              <span class="tag">Generative AI</span><span class="tag">LLMs</span>
+              <span class="tag">AI Strategy</span>
+            </div>
+            <div class="pdf-row">
+              <button class="btn-pdf" onclick="togglePDF('pdf-cert-genai', 'assets/CE_GenAI_for_All_cert.pdf')">👁️ View Certificate</button>
+              <a href="assets/CE_GenAI_for_All_cert.pdf" download class="btn-download">⬇️ Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Introduction to LangGraph -->
+        <div class="card cert-card">
+          <div class="cert-badge cert-badge--langchain">
+            <span class="cert-issuer-icon">🔗</span>
+          </div>
+          <div class="cert-body">
+            <h2>Introduction to LangGraph</h2>
+            <p class="cert-issuer">LangChain Academy</p>
+            <p class="cert-date">📅 Issued: February 17, 2025</p>
+            <p class="cert-id">🔑 Certificate ID: atn2zx83yy</p>
+            <div class="tag-cloud">
+              <span class="tag">LangGraph</span><span class="tag">Agentic AI</span>
+              <span class="tag">LangChain</span>
+            </div>
+            <div class="pdf-row">
+              <button class="btn-pdf" onclick="togglePDF('pdf-cert-langgraph', 'assets/langgraph_cert.pdf')">👁️ View Certificate</button>
+              <a href="assets/langgraph_cert.pdf" download class="btn-download">⬇️ Download</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data@Cloud 2.0 -->
+        <div class="card cert-card">
+          <div class="cert-badge cert-badge--mercedes">
+            <span class="cert-issuer-icon">⭐</span>
+          </div>
+          <div class="cert-body">
+            <h2>Data@Cloud 2.0</h2>
+            <p class="cert-issuer">Mercedes-Benz Group AG</p>
+            <p class="cert-date">📅 Issued: January 14, 2025</p>
+            <div class="tag-cloud">
+              <span class="tag">Cloud Data</span><span class="tag">Data Protection</span>
+              <span class="tag">Azure</span><span class="tag">GDPR</span>
+            </div>
+            <div class="pdf-row">
+              <button class="btn-pdf" onclick="togglePDF('pdf-cert-datacloud', 'assets/datacloudcertificate.pdf')">👁️ View Certificate</button>
+              <a href="assets/datacloudcertificate.pdf" download class="btn-download">⬇️ Download</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
